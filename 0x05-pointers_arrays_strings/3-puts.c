@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _putchar - A function that prints a string to the stdout
- * @c: The variable to print
- * Return: 1 on success
+ * _puts - print a character
+ * @c: character to print
+ * Return: Nothing
  */
 
-int _putchar(char c)
+void _puts(char *str)
 {
-	return (write(1, &c, 1));
-}
+	char *c;
+
