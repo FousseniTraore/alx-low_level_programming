@@ -17,7 +17,7 @@ char *_strchr(char *s, char c);
 	}
 	for (b = 0; b <= a; b++)
 	{
-		if (c == s[a])
+		if (c == s[b])
 		{
 			s += b;
 			return (s);
