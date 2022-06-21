@@ -5,23 +5,19 @@
  * @c: a character to find
  * Return: s
  */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
-	int a;
-	int b;
-
-	a = 0;
-	while (s[a])
+	while (*s != '\0')
 	{
-		a++;
-	}
-	for (b = 0; b <= a; b++)
-	{
-		if (c == s[b])
+		if (*s == c)
 		{
-			s += b;
 			return (s);
 		}
+		++s;
 	}
-	return ('\0');
+	if (*s == c)
+	{
+		return (s);
+	}
+	return (0);
 }
