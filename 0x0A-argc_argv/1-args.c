@@ -1,8 +1,8 @@
 #include "main.h"
 #include "stdio.h"
 /**
- * main - prints number of arguments passed into it
- * @argv: number of command line arguments
+ * main -  a program that prints its name, followed by a new line.
+ * @argv: argv
  * @argc: Array name
  * Return: 0
  */
@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		for (i = 0; *argv; i++, argv++)
+			;
 		printf("%d\n", i - 1);
 	}
 	return (0);
