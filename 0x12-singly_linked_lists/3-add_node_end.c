@@ -8,27 +8,40 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
-	size_t nchar;
+	list_t *new; *aux = *head;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
+	{
 		return (NULL);
+	}
 	new->str = strdup(str);
-	for (nchar = 0; str[nchar]; nchar++)
-		;
-	new->len = nchar;
+	if (!new->str)
+	{
+		free(new);
+		return (NULL);
+	}
+	new->len = _strlen_recursion(new->str);
 	new->next = NULL;
-	temp = *head;
-	if (temp  NULL)
+	if (aux)
 	{
-		*head = new;
+		while (aux->next)
+			aux = aux->next;
+		aux->next = new;
+		else
+			*head = new;
+		return (new);
 	}
+}
+/**
+ * _strlen_recursion -function that returns the length of a string.
+ * @s: string
+ * Return: length of the string
+ */
+int _strlen_recursion(char *s)
+{
+	if (*s == 0)
+		return (0);
 	else
-	{
-		while (temp->next != NULL)
-			temp = temp->next;
-		temp = temp->next;
-	}
-	return (*head);
+		return (1 + _strlen_recursion(s + 1));
 }
