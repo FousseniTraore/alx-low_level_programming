@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_listint28 -  a function that frees a listint_t list.
+ * free_listint2 -  a function that frees a listint_t list.
  * @head: pointer to the list.
  * Return: Nothing
  */
@@ -18,7 +18,7 @@ void free_listint2(listint_t **head)
 	{
 		free(actual_node);
 		actual_node = next_node;
-		next_node = next_node->next
+		next_node = next_node->next;
 	}
 	free(actual_node);
 	*head = NULL;
