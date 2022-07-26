@@ -1,8 +1,3 @@
-/*
- * File: 2-append_text_to_file.c
- * Auth: Brennan D Baraban
- */
-
 #include "holberton.h"
 /**
  * append_text_to_file - Appends text at the end of a file.
