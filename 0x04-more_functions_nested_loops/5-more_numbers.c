@@ -28,10 +28,10 @@ void more_numbers(void)
 				_putchar (num1 + '0');
 			}
 			_putchar (num2 + '0');
-			result++
+			result++;
 		}
 		i++;
-		result = o;
+		result = 0;
 		_putchar ('\n');
 	}
 }
