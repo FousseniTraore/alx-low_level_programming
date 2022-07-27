@@ -1,4 +1,4 @@
-iinclude "main.h"
+#include "main.h"
 /**
  * print_numbers - function that prints the numbers
  * Return: Nothing
