@@ -25,13 +25,13 @@ void more_numbers(void)
 			{
 				num1 = result / 10;
 				num2 = result % 10;
-				_putchar(num1 + '0');
+				_putchar (num1 + '0');
 			}
 			_putchar (num2 + '0');
 			result++
 		}
 		i++;
 		result = o;
-		_putchar('\n');
+		_putchar ('\n');
 	}
 }
